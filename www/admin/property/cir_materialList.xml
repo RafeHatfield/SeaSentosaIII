@@ -1,0 +1,7 @@
+<set name="attributes.mat_id" value="0" overwrite="no" />
+
+<invoke object="application.marketingObj" methodcall="displayMaterialForm(mat_id=#attributes.mat_id#)" returnVariable="content.mainContent" />
+
+<invoke object="application.marketingObj" methodcall="displayMaterialList()" returnVariable="MaterialList" />
+
+<set name="content.mainContent" value="#content.mainContent##MaterialList#" overwrite="yes" />

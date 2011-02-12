@@ -1,0 +1,45 @@
+<set name="attributes.pro_id" value="0" overwrite="no" />
+
+<if condition="isDefined('attributes.save')">
+	<true>
+		<invoke object="application.propertyObj" methodcall="propertySave(argumentCollection=attributes)" returnVariable="attributes.pro_id" />
+		<relocate url="#myself#property.propertyList" addtoken="false" />
+	</true>
+</if>
+
+<invoke object="application.propertyObj" methodCall="displayPropertyForm(pro_id=attributes.pro_id)" returnVariable="propertyForm" />
+
+<set name="content.mainContent" value="#propertyForm#" overwrite="no" />
+
+<!--
+
+<invoke object="application.propertyObj" methodcall="getProperty(pro_id=attributes.pro_id)" returnVariable="qProperty" />
+<invoke object="application.propertyObj" methodcall="getListingStatuses()" returnVariable="qListingStatuses" />
+
+<if condition="qProperty.recordCount">
+	<true>
+		<set name="attributes.pro_building" value="#qProperty.pro_building#" />
+		<set name="attributes.pro_unitNumber" value="#qProperty.pro_unitNumber#" />
+		<set name="attributes.pro_floor" value="#qProperty.pro_floor#" />
+		<set name="attributes.pro_beds" value="#qProperty.pro_beds#" />
+		<set name="attributes.pro_baths" value="#qProperty.pro_baths#" />
+		<set name="attributes.pro_carspaces" value="#qProperty.pro_carspaces#" />
+		<set name="attributes.pro_outlook" value="#qProperty.pro_outlook#" />
+		<set name="attributes.pro_description" value="#qProperty.pro_description#" />
+		<set name="attributes.lst_id" value="#qProperty.lst_id#" />
+	</true>
+	<false>
+		<set name="attributes.pro_building" value="" />
+		<set name="attributes.pro_unitNumber" value="" />
+		<set name="attributes.pro_floor" value="" />
+		<set name="attributes.pro_beds" value="" />
+		<set name="attributes.pro_baths" value="" />
+		<set name="attributes.pro_carspaces" value="" />
+		<set name="attributes.pro_outlook" value="" />
+		<set name="attributes.pro_description" value="" />
+		<set name="attributes.lst_id" value="2" />
+	</false>
+</if>
+
+<do action='v_property.propertyForm' contentVariable="content.mainContent" append="yes" />
+-->

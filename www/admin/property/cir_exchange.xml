@@ -1,0 +1,12 @@
+<set name="attributes.lis_id" value="0" overwrite="no" />
+<set name="exchangeForm" value="" overwrite="no" />
+<!--
+<if condition="cookie.prf_id is 1">
+	<true>
+		<invoke object="application.propertyObj" methodcall="displayExchangeForm(lis_id=attributes.lis_id)" returnVariable="exchangeForm" />
+	</true>
+</if>
+-->
+<invoke object="application.propertyObj" methodcall="displayPaymentSchedule(lis_id=attributes.lis_id)" returnVariable="paymentSchedule" />
+
+<set name="content.mainContent" value="#exchangeForm##paymentSchedule#" overwrite="yes" />

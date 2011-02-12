@@ -1,0 +1,11 @@
+<xfa name="editProperty" value="property.propertyForm" />
+
+<set name="attributes.fastFind" value="" overwrite="no" />
+
+<set name="listingsList" value="" overwrite="no" />
+  
+<invoke object="application.propertyObj" methodcall="displayListingSearch(fastFind=attributes.fastFind)" returnVariable="content.mainContent" />
+
+<invoke object="application.propertyObj" methodcall="displayListings(argumentCollection=attributes)" returnVariable="listingsList" />
+
+<set name="content.mainContent" value="#content.mainContent##listingsList#" overwrite="yes" />

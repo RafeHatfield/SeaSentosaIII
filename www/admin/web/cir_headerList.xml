@@ -1,0 +1,14 @@
+<set name="attributes.hdr_id" value="0" overwrite="false" />
+
+<if condition="isDefined('attributes.save')">
+	<true>
+		<invoke object="application.imageObj" methodcall="HeaderSave(argumentCollection=attributes)" />
+		<set name="attributes.hdr_id" value="0" overwrite="true" />
+ 	</true>
+</if>
+
+<invoke object="application.imageObj" methodcall="displayHeaderForm(attributes.hdr_id)" returnVariable="HeaderForm" />
+
+<invoke object="application.imageObj" methodcall="displayHeaderList()" returnVariable="HeaderList" />
+
+<set name="content.mainContent" value="#HeaderForm##HeaderList#" />

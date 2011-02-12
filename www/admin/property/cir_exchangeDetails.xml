@@ -1,0 +1,9 @@
+<set name="attributes.lis_id" value="0" overwrite="no" />
+  
+<invoke object="application.propertyObj" methodcall="displayExchangeDetails(argumentCollection=attributes)" returnVariable="exchangeDetails" />
+
+<!--
+<invoke object="application.propertyObj" methodcall="displayPaymentSchedule(lis_id=attributes.lis_id)" returnVariable="paymentSchedule" />
+-->
+
+<set name="content.mainContent" value="#exchangeDetails#" overwrite="yes" />

@@ -1,0 +1,275 @@
+/* *************************** 
+  Site -Sea sentosa
+  ---------------------------
+  StyleSheet Index
+  $1 - Global Styles
+  $2 - Website Structure Styles
+  $3 - Header Styles
+  $4 - Content Styles
+  $5 - Sidebar Styles
+  $6 - Footer Styles
+   ***************************/
+
+/* *************************** 
+   $1 GLOBAL Styles
+   ***************************/
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color:#FFF;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+img {
+	border:0;
+	vertical-align:middle;
+}
+fieldset {
+	border:none;
+}
+ul li {
+	list-style:none;
+}
+/* *************************** 
+   $2 Website Structure Styles
+   ***************************/
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#fff;
+	/*background:url(../images/bg_body.jpg) center top no-repeat;*/
+}
+
+#outer {width:1024px; margin:0 auto;background-color:#284B73}
+
+#container {
+	width:932px;
+	margin:0 auto;
+}
+
+/* *************************** 
+   $3 Header Styles
+   ***************************/
+#header {
+	width:100%;
+	position:relative;
+	height:190px;
+}
+#logo{
+	position:absolute;
+	left:36px;
+	bottom:0;
+	}
+/* *************************** 
+   $4 Content Styles
+   ***************************/
+#content {
+	width:100%;
+	overflow:hidden;
+	padding:29px 0 30px 0;
+}
+#maincontent{
+	width:700px;
+	float:right;
+}
+#maincontent h2{
+	display:inline-block;
+	font-size:16px;
+	color:#FFF;
+	padding:2px 19px 2px 5px;
+	margin:0 0 5px 0;
+	font-style:normal;
+	font-weight:normal;
+	background:#374e77;
+    background-color: rgba(55,78,119,0.9);
+    _background:#374e77;
+	}
+#maincontent h3{
+	display:inline-block;
+	font-size:14px;
+	color:#FFF;
+	padding:3px 19px 4px 5px;
+	margin:0 0 6px 0;
+	font-style:normal;
+	font-weight:normal;
+	background:#374e77;
+    background-color: rgba(55,78,119,0.9);
+    _background:#374e77;
+	}
+#featured{
+	overflow:hidden;
+	position:relative;
+	height: 160px;
+	width:932px;
+	}
+.form_box {
+	margin:0 0 17px;
+	width:700px;}
+.sea_sentosa{
+	margin:0 0 17px;
+	width:672px;}
+.form_box input{
+	background:#FFF;
+	vertical-align:middle;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#575757;
+	padding:4px 0px 4px 12px;
+	border:none;
+	}
+.form_box .textinput{
+	width:659px;}
+.form_box label{
+	color:#FFF;}
+.form_box p{
+	margin:5px 0 3px 0;}
+.form_box p label{
+	margin:0 23px 0 0;}
+.form_box .input_text{
+	width:320px;
+	margin:0 0 6px 0;
+	float:left;
+}
+.form_box .input_name{
+	width:320px;
+	float:right;
+	margin:0 0 6px;
+}
+.form_box .input_text{
+	width:320px;
+	margin:0;
+	float:left;
+	padding:5px 0px 5px 12px;
+}
+
+.form_box .input_name{
+	width:320px;
+	float:right;
+	margin:0;
+	display:inline;
+	padding:5px 0px 5px 12px;
+}
+.form_box .check{
+	width:19px;
+	height:17px;
+	background:none;
+	}
+.form_box textarea{
+	width:653px;
+	height:105px;
+	padding:5px 10px 10px 8px;
+	margin:0 0 2px 0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	border:0;
+	color:#585858;
+	overflow:hidden;}
+.form_box .input_button{
+	color:#FFF;
+	margin:0 0 0 16px;
+	padding:6px 0 4px;
+	background:none;
+	cursor:pointer;
+	outline:none;
+	float:right;
+	font-weight:bold;
+}
+.form_box ul{
+	overflow:hidden;
+	padding:15px 15px 0 13px;
+	background:#374e77;
+    background-color: rgba(55,78,119,0.9);
+	_background:#374e77;
+	margin:0 0 17px;
+	width:672px;
+	
+}
+.form_box li{
+	margin:0 0 6px;
+	float:left;
+	width:100%;}
+.form_box li span{
+	font-size:10px;
+	padding: 0 0 0 4px;
+	}
+#maincontent .sea_sentosa{
+	padding:13px 15px 10px 13px;
+	background:#374e77;
+    background-color: rgba(55,78,119,0.9);
+    _background:#374e77;}
+#maincontent .sea_sentosa h2{
+	margin:0;
+	padding:0 19px 0 0;
+	background:none;
+	font-size:14px;
+	}
+.sea_sentosa p{
+	margin:17px 0 0;
+	line-height:20px;
+}
+.sea_sentosa a{
+	color:#FFF;
+	text-decoration:none;}
+.sea_sentosa a:hover{
+	text-decoration:underline;
+	}
+/* *************************** 
+   $5 Sidebar Styles
+   ***************************/
+ #sidebar{
+	 float:left;
+	 width:201px;}
+.contact{
+	float:left;
+	width:194px;
+	background: #274b73;
+    background-color: rgba(39,75,115,0.9);
+	_background: #274b73;
+	font-size:12px;
+	color:#FFF;
+	padding:6px 0 0 5px;
+	}
+.contact span{
+	display:block;
+	padding:8px 0 6px;
+	}
+.contact a:hover{
+	text-decoration:none;}
+.contact span a{ 
+   display:inline;
+   padding:0 3px 0 7px;
+   background:none;}
+.contact span a:hover{
+	background:none;}
+/* *************************** 
+   $6 Footer Styles
+   ***************************/
+#footer {
+	width:100%;
+ background: #274b73;
+ background-color: rgba(39,75,115,0.9);
+  _background: #274b73;
+}
+#footer ul{
+	width:932px;
+	margin:0 auto;
+	overflow:hidden;}
+#footer ul li{
+	float:right;
+	padding:5px 0px 4px;
+	}
+#footer ul li a{
+	text-align:right;
+	color:#FFF;
+	font-size:11px;
+	border-right:1px solid #FFF;
+	padding:0 7px;}
+#footer ul li a:hover{
+	text-decoration:underline;}
+#footer ul .first a{
+	border-right:none;
+	padding:0 0 0 7px;}
